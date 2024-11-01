@@ -19,7 +19,7 @@ The project is organized into two main directories:
 
 2. Install dependencies:
    ```bash
-   npm install
+   yarn install
    ```
 
 ## Usage
@@ -29,7 +29,7 @@ The project is organized into two main directories:
 To start the application in development mode with hot-reloading:
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ### Building the Application
@@ -37,7 +37,7 @@ npm run dev
 To build the Remix and Express applications:
 
 ```bash
-npm run build
+yarn build
 ```
 
 ### Production Mode
@@ -45,7 +45,7 @@ npm run build
 To start the application in production mode:
 
 ```bash
-npm run start
+yarn start
 ```
 
 ## Folder Structure
