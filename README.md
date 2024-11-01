@@ -13,8 +13,8 @@ The project is organized into two main directories:
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/tuhin-cse/express-remix-boilerplate.git
+   cd express-remix-boilerplate
    ```
 
 2. Install dependencies:
