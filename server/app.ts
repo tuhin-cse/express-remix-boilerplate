@@ -3,6 +3,8 @@ import compression from "compression";
 import express from "express";
 import morgan from "morgan";
 import apiRoutes from "./routes/api";
+import config from "./config";
+import connectMongo from "./config/database";
 
 const app = express();
 
@@ -13,8 +15,15 @@ app.use(compression());
 
 app.disable("x-powered-by");
 
+
+connectMongo().then(() => {});
+
+app.use("/api", apiRoutes);
+
 (async () => {
-    app.use("/api", apiRoutes);
+
+
+
     const viteDevServer =
         process.env.NODE_ENV === "production"
             ? undefined
